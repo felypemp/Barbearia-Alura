@@ -52,7 +52,6 @@ nav a:hover {
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
-
     border: 3px solid;
     border-radius: 30px;
 }
@@ -95,11 +94,6 @@ footer {
     color: #FFFFFF;
     font-size: 13px;
     margin: 20px 0 0;
-}
-
-
-main {
-   
 }
 
 form {
@@ -255,7 +249,11 @@ em {
 /*****media querys *****/
 
 @media screen and (max-width: 480px) {
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video  {
+
+    main {
+        padding: 0 5px 0 5px;
+    }
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos  {
         width: auto;
     }
 
@@ -267,7 +265,13 @@ em {
         position: static;
     }
 
-    .lista-beneficios, .imgBeneficios {
+    .produtos li {
+        width: 45%;
+        vertical-align: top;
+        margin-bottom: 20px;
+    }
+
+    .lista-beneficios, .imgBeneficios, .imgcorte {
         width: 100%;
     }
 }
